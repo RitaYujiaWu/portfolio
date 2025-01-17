@@ -7,3 +7,30 @@ body {
     margin-inline: auto;
     padding: 1em;
 }
+nav {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid oklch(80% 3% 200);
+}
+nav a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+}
+nav a.current {
+  font-weight: bold;
+  border-bottom: 0.4em solid oklch(80% 3% 200);
+  padding-bottom: 6px;
+}
+:root {
+  --color-accent: oklch(80% 3% 200);
+}
+html {
+  accent-color: var(--color-accent);
+}
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 0% h)
+}
