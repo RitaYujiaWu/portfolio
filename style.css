@@ -1,7 +1,4 @@
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: auto;
@@ -35,6 +32,8 @@ nav a:hover {
   background-color: oklch(from var(--color-accent) 95% 0% h);
   padding-bottom: 6px;
 }
+
+/* Style for contact page*/
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -47,6 +46,8 @@ label {
 button {
   grid-column: 1 / -1;
 }
+
+/* Style for projects page*/
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -58,7 +59,7 @@ article {
   grid-row: span 3;
   gap: 1em;
 }
-h2 {
+body[data-page="projects"] h2 {
   margin: 0;
 }
 h1 {
@@ -67,4 +68,71 @@ h1 {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
+}
+
+/* customed design for resume page*/
+body[data-page="resume"] h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+body[data-page="resume"] h2 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+body[data-page="resume"] h3 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+body[data-page="resume"] p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+body[data-page="resume"] p a {
+  color: #007bff;
+  text-decoration: none;
+}
+body[data-page="resume"] p a:hover {
+  text-decoration: underline;
+}
+body[data-page="resume"] section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+}
+body[data-page="resume"] section article p {
+  text-align: left;
+  margin: 0;
+}
+body[data-page="resume"] article {
+  background: #eeeeee69;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+body[data-page="resume"] article ul {
+  padding-left: 20px;
+}
+body[data-page="resume"] article time {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0px;
+}
+body[data-page="resume"] article .location {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+body[data-page="resume"] ul {
+  padding-left: 20px;
+  line-height: 1.5;
 }
