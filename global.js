@@ -22,7 +22,7 @@ for (let p of pages) {
     if (!ARE_WE_HOME && !url.startsWith('http')) {
         url = '../' + url;
     }
-    if (!ARE_WE_HOME && !url.endsWith('portfolio/')) {
+    if (!ARE_WE_HOME && url.endsWith('portfolio/')) {
         url = './' + url;
     }
     let a = document.createElement('a');
