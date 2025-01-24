@@ -24,7 +24,8 @@ const ARE_WE_HOME = document.documentElement.classList.contains('home');
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-    url = !ARE_WE_HOME && !url.startsWith('http') ? `/${url}` : url;
+    const basePath = location.pathname.split('/').slice(0, -1).join('/'); // Extract base path
+    url = !ARE_WE_HOME && !url.startsWith('http') ? `${basePath}/${url}` : url;
 
     let a = document.createElement('a');
     a.href = url;
