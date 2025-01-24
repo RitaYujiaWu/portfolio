@@ -24,7 +24,7 @@ const ARE_WE_HOME = document.documentElement.classList.contains('home');
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-    url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
+    url = !ARE_WE_HOME && !url.startsWith('http') ? `/${url}` : url;
 
     let a = document.createElement('a');
     a.href = url;
@@ -64,7 +64,7 @@ const savedTheme = localStorage.getItem("colorScheme");
 select.addEventListener("input", function (event) {
     console.log("Color scheme changed to", event.target.value);
     document.documentElement.style.setProperty('color-scheme', event.target.value);
-    localStorage.colorScheme = event.target.value;
+    localStorage.setItem("colorScheme", event.target.value);
 });
 
 const form = document.querySelector("form");
