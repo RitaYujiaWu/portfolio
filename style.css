@@ -3,11 +3,13 @@ body {
     max-width: 100ch;
     margin-inline: auto;
     padding: 1em;
+    background-color: canvas;
+    color: canvastext;
 }
 nav {
   display: flex;
   margin-bottom: 20px;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom: 1px solid var(--border-color);
 }
 nav a {
   flex: 1;
@@ -18,19 +20,41 @@ nav a {
 }
 nav a.current {
   font-weight: bold;
-  border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 6px;
 }
 :root {
   --color-accent: oklch(80% 3% 200);
+  --border-color: oklch(50% 10% 200 / 40%);
 }
 html {
   accent-color: var(--color-accent);
+  border-color: var(--border-color);
+  color-scheme: light dark;
 }
 nav a:hover {
-  border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 0% h);
+  border-bottom: 0.4em solid var(--border-color);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   padding-bottom: 6px;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 0.3rem; 
+  right: 1rem; 
+  font-size: 80%;
+  font-family: inherit;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.color-scheme select {
+  padding: 1px 8px;
+  font-family: inherit;
+  font-size: 90%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 /* Style for contact page*/
@@ -70,68 +94,77 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-/* customed design for resume page*/
+/* Custom design for resume page */
+body[data-page="resume"] {
+  background: canvas;
+  color: canvastext;
+}
+
+/* Headings */
 body[data-page="resume"] h1 {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
+
 body[data-page="resume"] h2 {
   font-size: 1.8rem;
-  border-bottom: 3px solid #ddd;
+  border-bottom: 3px solid color-mix(in srgb, canvastext 30%, transparent);
   padding-bottom: 5px;
   margin-top: 30px;
 }
+
 body[data-page="resume"] h3 {
   font-size: 1.4rem;
-  color: #444;
+  color: color-mix(in srgb, canvastext 70%, canvas 30%);
   margin-bottom: 20px;
 }
+
+/* Paragraphs */
 body[data-page="resume"] p {
   text-align: center;
   font-size: 1rem;
   margin: 10px 0;
 }
+
 body[data-page="resume"] p a {
-  color: #007bff;
+  color: color-mix(in srgb, rgb(80, 140, 224) 80%, canvastext 20%);
   text-decoration: none;
 }
+
 body[data-page="resume"] p a:hover {
   text-decoration: underline;
 }
+
+/* Sections */
 body[data-page="resume"] section {
-  background: white;
+  background: color-mix(in srgb, canvas 80%, grey 10%);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 7px color-mix(in srgb, black 20%, transparent);
 }
-body[data-page="resume"] section article p {
-  text-align: left;
-  margin: 0;
-}
+
+/* Articles */
 body[data-page="resume"] article {
-  background: #eeeeee69;
+  background: color-mix(in srgb, canvas 85%, rgb(0, 0, 0) 5%);
   padding: 15px;
   border-radius: 5px;
   margin-top: 10px;
 }
-body[data-page="resume"] article ul {
-  padding-left: 20px;
-}
-body[data-page="resume"] article time {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #666;
-  margin-bottom: 0px;
-}
+
+/* Article meta info */
+body[data-page="resume"] article time,
 body[data-page="resume"] article .location {
   font-size: 0.9rem;
   font-style: italic;
-  color: #666;
+  color: color-mix(in srgb, canvastext 50%, canvas 50%);
   margin-bottom: 10px;
+  text-align: left;
 }
+
+/* Lists */
 body[data-page="resume"] ul {
   padding-left: 20px;
   line-height: 1.5;
