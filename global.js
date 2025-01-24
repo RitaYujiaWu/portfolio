@@ -19,13 +19,12 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
-const ARE_WE_HOME = document.documentElement.classList.contains('home');
+const ARE_WE_HOME = document.documentElement.classList.contains('Home');
 
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-    const basePath = location.pathname.split('/').slice(0, -1).join('/'); // Extract base path
-    url = !ARE_WE_HOME && !url.startsWith('http') ? `${basePath}/${url}` : url;
+    url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
 
     let a = document.createElement('a');
     a.href = url;
