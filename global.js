@@ -4,11 +4,6 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// const navLinks = $$("nav a")
-// let currentLink = navLinks.find(
-//     (a) => a.host === location.host && a.pathname === location.pathname
-//   );
-
 let pages = [
     { url: '', title: 'Home' },
     { url: 'projects/', title: 'Projects' },
@@ -19,12 +14,14 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
-const ARE_WE_HOME = document.documentElement.classList.contains('Home');
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-    url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
+    if (!ARE_WE_HOME && !url.startsWith('http')) {
+        url = '../' + url;
+    }
 
     let a = document.createElement('a');
     a.href = url;
