@@ -2,37 +2,37 @@
     {
         "title": "Extracting Structured Information Using LLMs",
         "year": "2024",
-        "image": "https://github.com/RitaYujiaWu/RitaYujiaWu/blob/main/BTTAI_readme.png",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "💸📄 This collaborative project with PIMCO, BTT, and UCLA develops a chatbot user interface to convert natural language queries of financial data into the corresponding SQL queries using Large Language Models."
     },
     {
         "title": "Kid-Centric Recipe Analysis",
         "year": "2024",
-        "image": "https://github.com/RitaYujiaWu/RitaYujiaWu/blob/main/kid_recipe_readme.png",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "👶🏻🍴 This collaborative project aims to investigate the features of recipes that make them kid-friendly by focusing on the recipe’s sodium content, balanced nutrients, and the preparation process by using statistical and machine learning tools."
     },
     {
         "title": "HPGe - Energy and Signal Noise Prediction Model",
         "year": "2023",
-        "image": "https://github.com/RitaYujiaWu/RitaYujiaWu/blob/main/HPGe_readme.png",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "⚙️📈 This individual project is based on High-Purity Germanium (HPGe) detector and focuses on building two prediction models: to estimate the energy through regression and to provide a \"classification score\" for detector noise."
     },
     {
         "title": "Basic Image Processing Application",
         "year": "2023",
-        "image": "https://github.com/RitaYujiaWu/RitaYujiaWu/blob/main/image_app_readme.png",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "🌇📱 This collaborative project developed a basic image-processing app with different parts including various image-processing methods, stimulation of a monetized app, and implementation of a KNN classifier to predict image labels."
     },
     {
         "title": "Dinosaur Legacy Through Data - Triassic to Cretaceous",
         "year": "2024",
-        "image": "https://github.com/RitaYujiaWu/Dinosaur-Legacy-Through-Data/blob/main/XFW%20poster_final.gif",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "🦖📊 This collaborative DataHacks project focuses on visualizing the dinosaur data from the Triassic to the Cretaceous, analyzing and rationalizing the trend of dinosaur types and characteristics from temporal and geographical aspects. This project won the best presentation awards at the DataHacks."
     },
     {
-        "title": "Reiciendis deserunt fuga at?",
+        "title": "Weather Data Visualization",
         "year": "2025",
-        "image": "https://github.com/RitaYujiaWu/portfolio/blob/main/images/106_project1.png",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "☀️🌧️ This visualization aims to compare each city’s monthly sunshine hours and rainfall inches to the monthly averages by visualizing the density of monthly standardized deviations. Combining this information with viewers’ own preferences for sunshine and rain, the viewers can conclude whether a city is salubrious to them on weather conditions."
     },
     {
