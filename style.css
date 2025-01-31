@@ -169,3 +169,40 @@ body[data-page="resume"] ul {
   padding-left: 20px;
   line-height: 1.5;
 }
+
+.middle-line {
+  width: 100%; /* Adjust width */
+  margin: 30px auto; /* Centers the line */
+  border: none;
+  border-top: 2px solid #ddd; /* Line color and thickness */
+}
+
+/* Home page github profile */
+#github-stats {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 10px;
+  text-align: center;
+}
+
+.grid-layout dt {
+  grid-row: 1; /* Place all labels in the first row */
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.grid-layout dd {
+  grid-row: 2; /* Place all values in the second row */
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
