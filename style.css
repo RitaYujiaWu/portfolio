@@ -227,3 +227,47 @@ body[data-page="resume"] ul {
 
   overflow: visible;
 }
+
+.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); /* Responsive grid */
+  gap: 10px;
+  list-style: none;
+  padding: 12px;  /* Add space inside the legend */
+  margin: 20px 0;  /* Add spacing around the legend */
+  border: 2px;  /* Light gray border */
+  border-radius: 8px;  /* Slight rounding on corners */
+  background-color: #f9f9f9;  /* Subtle background */
+  box-shadow: #ccc 0px 0px 10px;  /* Soft shadow */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;  /* Align swatch & text */
+  gap: 8px;  /* Space between swatch & text */
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color);
+  border-radius: 5px;  /* Rounded edges */
+  border: 1px solid #999;  /* Thin border to define swatches */
+  display: inline-block;
+}
+
+.container {
+  display: flex;  /* Places pie chart and legend side by side */
+  align-items: center;  /* Aligns items vertically */
+  gap: 50px;  /* Space between pie chart and legend */
+  max-width: 750px;  /* Prevents excessive stretching */
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+svg {
+  width: 250px;  /* Sets a fixed width for the pie chart */
+  height: 250px;
+}
