@@ -220,3 +220,10 @@ body[data-page="resume"] ul {
   height: 170px;
   border-radius: 8px;
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
