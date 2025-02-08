@@ -206,3 +206,17 @@ body[data-page="resume"] ul {
   font-weight: bold;
   margin: 0;
 }
+
+.project-year {
+  font-style: italic;
+  color: #666; /* Soft gray for a subtle look */
+  font-family: Baskerville, serif; /* System font */
+  font-variant-numeric: oldstyle-nums; /* Ensures numbers blend into text style */
+}
+
+/* Default project image */
+.project-image {
+  width: 250px;
+  height: 170px;
+  border-radius: 8px;
+}
