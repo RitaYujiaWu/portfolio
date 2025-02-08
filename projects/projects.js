@@ -9,22 +9,6 @@ projectsTitle.textContent = `Projects (${projects.length})`;
 renderProjects(projects, projectsContainer, 'h2');
 
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
-
-// let data = [1, 2];
-// let total = 0;
-
-// for (let d of data) {total += d;}
-
-// let angle = 0;
-// let arcData = [];
-
-// for (let d of data) {
-//   let endAngle = angle + (d / total) * 2 * Math.PI;
-//   arcData.push({ startAngle: angle, endAngle });
-//   angle = endAngle;
-// }
-
-// let arcs = arcData.map((d) => arcGenerator(d));
 function renderPieChart(projectsGiven) {
 
     let rolledData = d3.rollups(
@@ -73,3 +57,54 @@ searchInput.addEventListener('input', (event) => {
     renderProjects(filteredProjects, projectsContainer, 'h2');
     renderPieChart(filteredProjects);
 });
+
+let selectedIndex = -1;
+
+let svg = d3.select('svg');
+let legend = d3.select('.legend');
+let colors = d3.scaleOrdinal(d3.schemeTableau10);
+
+function updatePieChart(data) {
+  let sliceGenerator = d3.pie().value((d) => d.value);
+  let arcData = sliceGenerator(data);
+  let arcs = arcData.map((d) => arcGenerator(d));
+
+  svg.selectAll('path').remove();
+  arcs.forEach((arc, i) => {
+    svg
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', colors(i))
+      .on('click', () => {
+        selectedIndex = selectedIndex === i ? -1 : i;
+        
+        svg
+          .selectAll('path')
+          .attr('class', (_, idx) => (selectedIndex === idx ? 'selected' : ''));
+        
+        legend
+          .selectAll('li')
+          .attr('class', (_, idx) => (selectedIndex === idx ? 'selected' : ''));
+        
+        if (selectedIndex === -1) {
+          renderProjects(projects, projectsContainer, 'h2');
+        } else {
+          let selectedYear = data[selectedIndex].label;
+          let filteredProjects = projects.filter(p => p.year === selectedYear);
+          renderProjects(filteredProjects, projectsContainer, 'h2');
+        }
+      });
+  });
+}
+let rolledData = d3.rollups(
+    projects,
+    (v) => v.length,
+    (d) => d.year,
+);
+
+let data = rolledData.map(([year, count]) => {
+    return { value: count, label: year };
+});
+
+updatePieChart(data);
+
