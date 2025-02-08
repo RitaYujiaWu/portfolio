@@ -238,7 +238,7 @@ body[data-page="resume"] ul {
   margin: 20px 0;  /* Add spacing around the legend */
   border: 2px;  /* Light gray border */
   border-radius: 8px;  /* Slight rounding on corners */
-  background-color: #f9f9f9;  /* Subtle background */
+  background-color: color-mix(in srgb, canvas 80%, grey 10%);  /* Subtle background */
   box-shadow: #ccc 0px 0px 10px;  /* Soft shadow */
 }
 

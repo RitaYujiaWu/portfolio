@@ -6,16 +6,16 @@
         "description": "💸📄 This collaborative project with PIMCO, BTT, and UCLA develops a chatbot user interface to convert natural language queries of financial data into the corresponding SQL queries using Large Language Models."
     },
     {
-        "title": "Kid-Centric Recipe Analysis",
-        "year": "2024",
-        "image": "../images/kid_recipe_readme.png",
-        "description": "👶🏻🍴 This collaborative project aims to investigate the features of recipes that make them kid-friendly by focusing on the recipe’s sodium content, balanced nutrients, and the preparation process by using statistical and machine learning tools."
-    },
-    {
         "title": "Dinosaur Legacy Through Data - Triassic to Cretaceous",
         "year": "2024",
         "image": "../images/XFW poster_final.gif",
         "description": "🦖📊 This collaborative DataHacks project focuses on visualizing the dinosaur data from the Triassic to the Cretaceous, analyzing and rationalizing the trend of dinosaur types and characteristics from temporal and geographical aspects. This project won the best presentation awards at the DataHacks."
+    },
+    {
+        "title": "Kid-Centric Recipe Analysis",
+        "year": "2024",
+        "image": "../images/kid_recipe_readme.png",
+        "description": "👶🏻🍴 This collaborative project aims to investigate the features of recipes that make them kid-friendly by focusing on the recipe’s sodium content, balanced nutrients, and the preparation process by using statistical and machine learning tools."
     },
     {
         "title": "HPGe - Energy and Signal Noise Prediction Model",
@@ -37,19 +37,19 @@
     },
     {
         "title": "Totam non ad numquam?",
-        "year": "2023",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Est fuga, optio ipsam corporis neque perspiciatis architecto cumque reiciendis ratione officiis maxime numquam expedita laboriosam. Illo, ad consectetur quo sapiente ullam, soluta inventore saepe officia natus ipsa dolore veritatis!"
     },
     {
         "title": "Perspiciatis voluptates omnis ad.",
-        "year": "2025",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Repudiandae illo commodi quia est error sit assumenda beatae. Nulla illum voluptas sit? Quisquam dolorem veritatis reiciendis odio placeat unde maxime tempora repudiandae nostrum natus sapiente soluta voluptatum, itaque quasi?"
     },
     {
         "title": "Odio voluptas explicabo deserunt.",
-        "year": "2023",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Vitae enim reprehenderit dicta aliquam dignissimos, ipsam molestias magnam perferendis ab porro repellendus laboriosam eligendi quos! Perspiciatis dignissimos architecto cumque ipsum itaque, ipsa, ad libero aliquid soluta minus et illo."
     },
@@ -61,13 +61,13 @@
     },
     {
         "title": "Voluptatibus sit aspernatur voluptatum.",
-        "year": "2024",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Similique ipsa, natus hic et debitis deserunt nesciunt. Perferendis ducimus inventore magnam suscipit voluptates. Corrupti repudiandae illo optio architecto similique. Voluptatum corrupti itaque, maxime velit deleniti impedit blanditiis culpa nam?"
     },
     {
         "title": "Dolore, deserunt. Enim, ut.",
-        "year": "2025",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Non ratione illo laboriosam. Deleniti mollitia unde cum magnam placeat culpa eos ab voluptatum, sit impedit voluptates nisi, labore aperiam dolores quas neque doloremque porro quam facere incidunt recusandae laboriosam!"
     }
