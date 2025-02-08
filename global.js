@@ -100,7 +100,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         console.log(`Rendering project #${index}:`, project);
         const article = document.createElement('article');
         const isProjectsPage = window.location.pathname.includes('/projects')
-        const imagePath = isProjectsPage ? `../${project.image}` : project.image;
+        const imagePath = isProjectsPage ? `../${project.image}` : `./${project.image}`;
         article.innerHTML = `
         <${headingLevel}>${project.title}</${headingLevel}>
         <img src="${imagePath}" alt="${project.title}" class="project-image">
