@@ -159,21 +159,35 @@ function createScatterPlot(){
 
     const dots = svg.append('g').attr('class', 'dots');
 
+    const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
+    const rScale = d3.scaleSqrt().domain([minLines, maxLines]).range([2, 30]); 
+    const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
+    
+    function getColor(hour) {
+        if (hour >= 5 && hour < 12) return '#FFA500'; // Morning (Orange)
+        if (hour >= 12 && hour < 17) return '#FF8C00'; // Afternoon (Dark Orange)
+        if (hour >= 17 && hour < 21) return '#87CEFA'; // Evening (Light Blue)
+        return '#1E3A8A'; // Night (Dark Blue)
+    }
+    
     dots
     .selectAll('circle')
-    .data(commits)
+    .data(sortedCommits)
     .join('circle')
     .attr('cx', (d) => xScale(d.datetime))
     .attr('cy', (d) => yScale(d.hourFrac))
-    .attr('r', 5)
-    .attr('fill', 'steelblue')
-    .on('mouseenter', (event, commit) => {
-    updateTooltipContent(commit);
-    updateTooltipVisibility(true);
-    updateTooltipPosition(event);})
-    .on('mouseleave', () => {
-    updateTooltipContent({});
-    updateTooltipVisibility(false);});
+    .attr('r', (d) => rScale(d.totalLines))
+    .attr('fill', (d) => getColor(d.hourFrac))
+    .style('fill-opacity', 0.7)
+    .on('mouseenter', function (event, d, i) {
+        d3.select(event.currentTarget).style('fill-opacity', 1);
+        updateTooltipContent(commit);
+        updateTooltipVisibility(true);
+        updateTooltipPosition(event);})
+    .on('mouseleave', function (event) {
+        d3.select(event.currentTarget).style('fill-opacity', 0.7);
+        updateTooltipContent({});
+        updateTooltipVisibility(false);});
 }
 
 function updateTooltipContent(commit) {
@@ -198,3 +212,4 @@ function updateTooltipPosition(event) {
     tooltip.style.left = `${event.clientX}px`;
     tooltip.style.top = `${event.clientY}px`;
 }
+
