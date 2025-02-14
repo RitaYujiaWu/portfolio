@@ -307,3 +307,49 @@ path {
     fill: var(--color);
   }
 }
+
+#stats {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+#stats h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#stats dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 10px;
+  text-align: center;
+}
+
+#stats div.stat-item {
+  display: flex;
+  flex-direction: column; /* Stack dt above dd */
+  align-items: center;
+}
+
+#stats dt {
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#stats dt abbr {
+  text-decoration: none; /* Remove underline */
+  border-bottom: 1px dotted gray; /* Add dotted underline for abbreviation */
+  cursor: help;
+}
+
+#stats dd {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
