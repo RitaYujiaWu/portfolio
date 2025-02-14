@@ -15,7 +15,19 @@
         This is the meta-analysis page, including stats about the code of this website.
     </p>
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="chart">
+        <dl id="commit-tooltip" class="info tooltip">
+            <dt>Commit</dt>
+            <dd>
+                <a href="" id="commit-link" target="_blank"></a>
+            </dd>
+
+            <dt>Date</dt>
+            <dd id="commit-date"></dd>
+
+            <!-- Add: Time, author, lines edited -->
+        </dl>
+    </div>
     <h2>Meta Data Stats</h2>
     <div id="stats"></div>
 </body>

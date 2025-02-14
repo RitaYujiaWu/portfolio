@@ -385,3 +385,58 @@ svg {
   stroke: black;
   stroke-width: 0.5;
 }
+
+/* Grid layout for <dl class="info"> */
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Labels in the first column, values in the second */
+  gap: 5px 10px; /* Add spacing between items */
+  align-items: center; /* Align text properly */
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info dt {
+  font-size: 14px;
+  font-weight: bold;
+  color: gray; /* Make labels less prominent */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+dl.info dd {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle elevation effect */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 15px; /* Comfortable spacing */
+  font-size: 10px;
+  color: black;
+  max-width: 250px;
+  backdrop-filter: blur(8px); /* Frosted glass effect (optional) */
+  z-index: 1000; /* Ensures tooltip stays on top */
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
