@@ -310,8 +310,7 @@ path {
 
 #stats {
   max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  margin: 30px;
 }
 
 #stats h1 {
@@ -352,4 +351,37 @@ path {
   font-size: 32px;
   font-weight: bold;
   margin: 0;
+}
+
+#chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%; /* Allow it to scale */
+  max-width: 1200px;
+}
+
+svg {
+  width: 80%; /* Make the SVG responsive */
+  height: auto; /* Allow it to scale */
+}
+
+.gridlines line {
+  stroke: #ddd; /* Light gray gridlines */
+}
+
+.axis text {
+  font-size: 16px; /* Bigger labels */
+  font-weight: bold;
+}
+
+.axis path,
+.axis line {
+  stroke: black;
+}
+
+.dots circle {
+  stroke: black;
+  stroke-width: 0.5;
 }
