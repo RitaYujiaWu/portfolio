@@ -440,3 +440,67 @@ circle {
 circle:hover {
   transform: scale(1.5);
 }
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+#language-container {
+  max-width: 600px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#language-container h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#language-breakdown {
+  display: grid;
+  grid-template-rows: auto auto; /* ✅ Titles on top, content on bottom */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* ✅ Keep columns evenly sized */
+  justify-content: center; /* ✅ Center the grid */
+  text-align: center;
+  gap: 5px; /* ✅ Reduce horizontal gap */
+  padding: 5px 10px; /* ✅ Keep content compact */
+  width: 100%; /* ✅ Ensure full width is used */
+  max-width: 600px; /* ✅ Prevent too much expansion */
+  margin: auto;
+  min-height: 60px;
+}
+
+#language-breakdown dt {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: gray;
+  grid-row: 1; /* ✅ Force all titles to be in the first row */
+}
+
+#language-breakdown dd {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  grid-row: 2; /* ✅ Reserve space so content doesn't pop out */
+}
+
+#language-breakdown .percentage {
+  font-size: 14px;
+  color: darkgray;
+}
