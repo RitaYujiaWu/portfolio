@@ -4,35 +4,35 @@
         "year": "2024",
         "image": "/images/BTTAI.jpg",
         "url": "https://github.com/PIMCO1B-BTTAI/PIMCO-Text2SQL",
-        "description": "💸📄 This collaborative project with PIMCO, BTT, and UCLA develops a chatbot user interface to convert natural language queries of financial data into the corresponding SQL queries using Large Language Models. <br><br>🔗 Click the title to view the Github Repo and try on the chatbot!"
+        "description": "💸📄 This collaborative project with PIMCO, BTT, and UCLA develops a chatbot user interface to convert natural language queries of financial data into the corresponding SQL queries using Large Language Models. <br><br>🔗 Click the title / image to view the Github Repo and try on the chatbot!"
     },
     {
         "title": "Dinosaur Legacy Through Data - Triassic to Cretaceous",
         "year": "2024",
         "image": "/images/XFW poster_final.gif",
         "url": "https://github.com/RitaYujiaWu/Dinosaur-Legacy-Through-Data",
-        "description": "🦖📊 This collaborative DataHacks project focuses on visualizing the dinosaur data from the Triassic to the Cretaceous, analyzing and rationalizing the trend of dinosaur types and characteristics from temporal and geographical aspects. This project won the best presentation awards at the DataHacks.<br><br>🔗 Click the title to view the Github Repo."
+        "description": "🦖📊 This collaborative DataHacks project focuses on visualizing the dinosaur data from the Triassic to the Cretaceous, analyzing and rationalizing the trend of dinosaur types and characteristics from temporal and geographical aspects. This project won the best presentation awards at the DataHacks.<br><br>🔗 Click the title / image to view the Github Repo."
     },
     {
         "title": "Kid-Centric Recipe Analysis",
         "year": "2024",
         "image": "/images/kid_recipe_readme.png",
         "url": "https://github.com/YolandaFYL/Kid-Centric-Recipe-Analysis",
-        "description": "👶🏻🍴 This collaborative project aims to investigate the features of recipes that make them kid-friendly by focusing on the recipe’s sodium content, balanced nutrients, and the preparation process by using statistical and machine learning tools.<br><br>🔗 Click the title to view the Github Repo."
+        "description": "👶🏻🍴 This collaborative project aims to investigate the features of recipes that make them kid-friendly by focusing on the recipe’s sodium content, balanced nutrients, and the preparation process by using statistical and machine learning tools.<br><br>🔗 Click the title / image to view the Github Repo."
     },
     {
         "title": "HPGe - Energy and Signal Noise Prediction Model",
         "year": "2023",
         "image": "/images/HPGe_readme.png",
         "url": "https://github.com/RitaYujiaWu/Energy-and-Signal-Noise-Prediction-Model",
-        "description": "⚙️📈 This individual project is based on High-Purity Germanium (HPGe) detector and focuses on building two prediction models: to estimate the energy through regression and to provide a \"classification score\" for detector noise.<br><br>🔗 Click the title to view the Github Repo."
+        "description": "⚙️📈 This individual project is based on High-Purity Germanium (HPGe) detector and focuses on building two prediction models: to estimate the energy through regression and to provide a \"classification score\" for detector noise.<br><br>🔗 Click the title / image to view the Github Repo."
     },
     {
         "title": "Basic Image Processing Application",
         "year": "2023",
         "image": "/images/image_app_readme.png",
         "url": "https://github.com/RitaYujiaWu/Basic-Image-Processing-Application",
-        "description": "🌇📱 This collaborative project developed a basic image-processing app with different parts including various image-processing methods, stimulation of a monetized app, and implementation of a KNN classifier to predict image labels.<br><br>🔗 Click the title to view the Github Repo."
+        "description": "🌇📱 This collaborative project developed a basic image-processing app with different parts including various image-processing methods, stimulation of a monetized app, and implementation of a KNN classifier to predict image labels.<br><br>🔗 Click the title / image to view the Github Repo."
     },
     {
         "title": "Weather Data Visualization",
@@ -45,7 +45,7 @@
         "year": "2025",
         "image": "/images/bike.png",
         "url": "https://ritayujiawu.github.io/bike_watching/",
-        "description": "🚲🗺️ This project aims to create a map that shows the locations of bike stations in Boston area and the number of departures and arrivals at each station every minute in a day.<br><br>🔗 Click the title to view the map. (May take a second to render)"
+        "description": "🚲🗺️ This project aims to create a map that shows the locations of bike stations in Boston area and the number of departures and arrivals at each station every minute in a day.<br><br>🔗 Click the title / image to view the map. (May take a second to render)"
     },
     {
         "title": "Perspiciatis voluptates omnis ad.",
