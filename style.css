@@ -504,3 +504,14 @@ circle:hover {
   font-size: 14px;
   color: darkgray;
 }
+
+article h2 a {
+  color: inherit; /* Keeps the original text color */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+article h2 a:hover {
+  color: color-mix(in srgb, rgb(80, 140, 224) 80%, canvastext 20%); /* Changes color to blue on hover */
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
