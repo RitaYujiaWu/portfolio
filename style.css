@@ -515,3 +515,12 @@ article h2 a:hover {
   color: color-mix(in srgb, rgb(80, 140, 224) 80%, canvastext 20%); /* Changes color to blue on hover */
   text-decoration: underline; /* Optional: adds underline on hover */
 }
+
+/* Image hover effect */
+article a img {
+  transition: filter 0.3s ease-in-out;
+}
+
+article a:hover img {
+  filter: brightness(80%) contrast(120%); /* Adds a blue tint effect */
+}
